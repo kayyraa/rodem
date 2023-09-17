@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
           window.open("https://youtube.com", "_self");
       } else if (query === "wiki" || "wikipedia") {
         window.open(`https://${userLanguage}.wikipedia.org/`, "_self");
+      } else if (query === " " || "") {
+        alert("You should put a text to search!");
       }
     });
 });
@@ -37,14 +39,12 @@ window.addEventListener('keydown', function (e) {
             window.open("https://youtube.com", "_self");
         } else if (query === "wiki" || "wikipedia") {
           window.open(`https://${userLanguage}.wikipedia.org/`, "_self");
-        } else if (query === " " || "") {
-            alert("You need to type something to search!");
         }
     }
 }, false);
 
 window.onload = function () {
-  const vers = "v2.79.05.29";
+  const vers = "v2.78.21.23";
   const textElement = document.getElementById("rws-004");
   textElement.innerHTML = vers;
   const versLength = vers.length;
