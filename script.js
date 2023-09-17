@@ -37,6 +37,8 @@ window.addEventListener('keydown', function (e) {
             window.open("https://youtube.com", "_self");
         } else if (query === "wiki" || "wikipedia") {
           window.open(`https://${userLanguage}.wikipedia.org/`, "_self");
+        } else if (query === " " || "") {
+            continue
         }
     }
 }, false);
