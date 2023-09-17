@@ -44,7 +44,7 @@ window.addEventListener('keydown', function (e) {
 }, false);
 
 window.onload = function () {
-  const vers = "v2.78.21.23";
+  const vers = "v2.79.05.29";
   const textElement = document.getElementById("rws-004");
   textElement.innerHTML = vers;
   const versLength = vers.length;
