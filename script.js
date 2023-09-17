@@ -38,7 +38,7 @@ window.addEventListener('keydown', function (e) {
         } else if (query === "wiki" || "wikipedia") {
           window.open(`https://${userLanguage}.wikipedia.org/`, "_self");
         } else if (query === " " || "") {
-            continue
+            continue;
         }
     }
 }, false);
